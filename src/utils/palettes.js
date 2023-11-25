@@ -8,5 +8,8 @@ export const palettes = {
     textSecondary: "#AAAAAA",
     stroke: "#E0E0E0",
     textField: "#F4F4F4",
+    detailText: "#EEEEEE",
+    white: "#FFFFFF",
+    listField: "#F8F8F8",
   },
 };

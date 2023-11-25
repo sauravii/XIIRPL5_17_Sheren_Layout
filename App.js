@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 import { fonts } from "./src/utils/fonts";
+import HomePage from "./src/screens/home";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -18,7 +19,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={{ ...fonts.md1 }}>Open up App.js to start working on your app!</Text>
+      <HomePage />
       <StatusBar style="auto" />
     </View>
   );
@@ -28,7 +29,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    marginVertical: 30,
   },
 });
