@@ -9,13 +9,15 @@ const NavbarMain = (props) => {
     <View style={[styles.navbarContainer, props.navStyle]}>
       <Text style={styles.mainText}>{props.detailText}</Text>
       <Text style={styles.titleText}>{props.titleText}</Text>
-      <View style={styles.containerHorizontal}>
-        <View style={styles.amountField}>
-          <Text style={styles.detailText}>{props.subText}</Text>
-          <Text style={styles.counterText}>{props.amountText}</Text>
+      {props.checkNavCondition ? (
+        <View style={styles.containerHorizontal}>
+          <View style={styles.amountField}>
+            <Text style={styles.detailText}>{props.subText}</Text>
+            <Text style={styles.counterText}>{props.amountText}</Text>
+          </View>
+          <ButtonLine title={props.btnText} onPress={props.onButtonPress} />
         </View>
-        <ButtonLine title={props.btnText} onPress={props.onButtonPress} />
-      </View>
+      ) : null}
     </View>
   );
 };

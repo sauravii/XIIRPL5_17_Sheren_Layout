@@ -4,8 +4,8 @@ import { fonts } from "../../utils/fonts";
 
 export default StyleSheet.create({
   listContainer: {
-    marginHorizontal: 16,
-    marginTop: 30,
+    marginHorizontal: 18,
+    marginVertical: 25,
     gap: 18,
   },
 });

@@ -1,8 +1,5 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
 import React from "react";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
-import Ionicons from "@expo/vector-icons/Ionicons";
-import { IcChevronRight } from "../../../assets";
 import { palettes } from "../../../utils/palettes";
 import { fonts } from "../../../utils/fonts";
 
@@ -13,7 +10,9 @@ const ListComponent = (props) => {
         <Text style={styles.title}>{props.title}</Text>
         <Text style={styles.subtitle}>{props.subtitle}</Text>
       </View>
-      <TouchableOpacity>{/* <Ionicons icon="chevron-forward-outline" size={30} color="#000000" /> */}</TouchableOpacity>
+      <TouchableOpacity>
+        <Image source={require("../../../assets/images/ic-arrow-right.png")} style={styles.icon} />
+      </TouchableOpacity>
     </View>
   );
 };
@@ -23,11 +22,12 @@ export default ListComponent;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: palettes.default.listField,
-    width: "343",
-    height: "72",
     paddingVertical: 12,
     paddingHorizontal: 16,
     borderRadius: 8,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
   title: {
     ...fonts.lg1,
@@ -36,5 +36,9 @@ const styles = StyleSheet.create({
   subtitle: {
     ...fonts.md1,
     color: palettes.default.secondary,
+  },
+  icon: {
+    height: 32,
+    width: 32,
   },
 });

@@ -4,6 +4,7 @@ import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 import { fonts } from "./src/utils/fonts";
 import HomePage from "./src/screens/home";
+import CreateDataPage from "./src/screens/add";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -19,7 +20,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <HomePage />
+      <CreateDataPage />
       <StatusBar style="auto" />
     </View>
   );
@@ -29,6 +30,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    marginVertical: 30,
+    marginTop: 30,
   },
 });

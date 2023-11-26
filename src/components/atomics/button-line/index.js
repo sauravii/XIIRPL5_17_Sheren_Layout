@@ -6,7 +6,7 @@ import { fonts } from "../../../utils/fonts";
 const ButtonLine = (props) => {
   return (
     <TouchableOpacity onPress={props.onPress} style={[styles.container, props.btnStyle]}>
-      <Text style={styles.text}>{props.title}</Text>
+      <Text style={[styles.text, props.textStyle]}>{props.title}</Text>
     </TouchableOpacity>
   );
 };
@@ -18,10 +18,10 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderRadius: 100,
     borderColor: palettes.default.white,
-    width: 140,
-    height: 40,
     justifyContent: "center",
     alignItems: "center",
+    paddingHorizontal: 24,
+    paddingVertical: 10,
   },
   text: {
     color: palettes.default.white,

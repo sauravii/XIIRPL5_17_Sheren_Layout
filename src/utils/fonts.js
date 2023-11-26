@@ -11,6 +11,10 @@ export const fonts = {
     fontSize: 16,
     fontFamily: "Inter_600SemiBold",
   },
+  md3: {
+    fontSize: 16,
+    fontFamily: "Inter_500Medium",
+  },
   lg1: {
     fontSize: 20,
     fontFamily: "Inter_500Medium",

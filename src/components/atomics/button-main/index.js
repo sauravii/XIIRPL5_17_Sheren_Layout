@@ -13,15 +13,17 @@ const ButtonMain = (props) => {
 
 export default ButtonMain;
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     backgroundColor: palettes.default.secondary,
     borderWidth: 1,
     borderRadius: 100,
-    width: 140,
-    height: 40,
+    borderColor: palettes.default.secondary,
     justifyContent: "center",
     alignItems: "center",
+    paddingHorizontal: 24,
+    paddingVertical: 10,
+    flex: 1,
   },
   text: {
     color: palettes.default.white,
