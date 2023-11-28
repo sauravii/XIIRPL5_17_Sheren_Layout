@@ -27,4 +27,8 @@ export const fonts = {
     fontSize: 24,
     fontFamily: "Inter_600SemiBold",
   },
+  lg4: {
+    fontSize: 30,
+    fontFamily: "Inter_600SemiBold",
+  },
 };

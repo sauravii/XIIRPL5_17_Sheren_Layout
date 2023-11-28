@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: 24,
     paddingVertical: 10,
-    flex: 1,
+    // flex: 1,
   },
   text: {
     color: palettes.default.white,

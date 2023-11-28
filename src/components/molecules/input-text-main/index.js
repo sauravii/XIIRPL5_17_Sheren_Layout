@@ -8,9 +8,16 @@ const InputTextMain = (props) => {
 
   return (
     <View>
-      <View style={styles.container}>
+      <View style={[styles.container, props.containerStyle]}>
         <Text style={styles.title}>{props.title}</Text>
-        <TextInput placeholder={props.placeholder} style={onFocusStyle ? styles.inputStyleActive : styles.inputStyle} onFocus={() => setOnFocusStyle(true)} onBlur={() => setOnFocusStyle(false)} placeholderTextColor="#AAAAAA" />
+        <TextInput
+          placeholder={props.placeholder}
+          style={onFocusStyle ? styles.inputStyleActive : styles.inputStyle}
+          onFocus={() => setOnFocusStyle(true)}
+          onBlur={() => setOnFocusStyle(false)}
+          placeholderTextColor="#AAAAAA"
+          editable={props.editable}
+        />
       </View>
     </View>
   );

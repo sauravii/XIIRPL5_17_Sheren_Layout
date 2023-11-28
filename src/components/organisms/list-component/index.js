@@ -10,7 +10,7 @@ const ListComponent = (props) => {
         <Text style={styles.title}>{props.title}</Text>
         <Text style={styles.subtitle}>{props.subtitle}</Text>
       </View>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={props.onPress}>
         <Image source={require("../../../assets/images/ic-arrow-right.png")} style={styles.icon} />
       </TouchableOpacity>
     </View>

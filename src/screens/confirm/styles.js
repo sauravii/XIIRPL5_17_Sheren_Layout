@@ -6,11 +6,17 @@ export default StyleSheet.create({
   container: {
     backgroundColor: palettes.default.white,
     marginTop: 25,
-    flex: 1,
+    height: "100%",
+    paddingHorizontal: 18,
   },
-  listContainer: {
-    marginHorizontal: 18,
-    marginVertical: 25,
-    gap: 18,
+  titleStyle: {
+    ...fonts.lg3,
+    textAlign: "center",
+    marginVertical: 32,
+  },
+  btnGroup: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    gap: 10,
   },
 });
